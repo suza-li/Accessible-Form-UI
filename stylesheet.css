@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    flex-direction: row;
+    border: solid black;
+    border-radius: 15px;
+    border-width: 3px;
+    padding: 25px;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: large;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+label {
+    font-size: 16pt;
+}
+
+input {
+    margin: 10px 0;
+    border: solid black;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 18pt;
+}
+
+#Update {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border: solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+}
+
+.information {
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.information ul {
+    margin: 10px;
+    background-color: lightgrey;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: left;
+}
+
+.information li {
+    list-style-type: none;
+    font-size: 14pt;
+    margin: 10px 0;
+}
