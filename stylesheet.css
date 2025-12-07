@@ -16,6 +16,7 @@ body {
 }
 
 form {
+    flex: 1;
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -30,13 +31,52 @@ input {
     border: solid black;
     border-radius: 15px;
     padding: 10px;
-    font-size: 18pt;
+    font-size: 16pt;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+[aria-invalid="true"] {
+    margin: 10px 0;
+    border: solid red;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16pt;
+}
+
+.password-text {
+    display: none;
+}
+
+#toggle:checked ~ .password-password {
+    display: none;
+}
+
+#toggle:checked ~ .password-text {
+    display: inline-block;
 }
 
 #Update {
     margin-top: 20px;
     background-color: black;
     color: white;
+}
+
+#Update:hover {
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+}
+
+.information {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .circle {
@@ -48,12 +88,6 @@ input {
     justify-content: center;
     align-items: center;
     font-size: 16pt;
-}
-
-.information {
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
 }
 
 .information ul {
@@ -68,4 +102,9 @@ input {
     list-style-type: none;
     font-size: 14pt;
     margin: 10px 0;
+}
+
+.complete {
+    text-decoration: line-through;
+    color: grey;
 }

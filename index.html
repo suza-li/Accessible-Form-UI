@@ -10,18 +10,26 @@
         <form>
             <label for="name">Full Name</label>
             <input type="text" id="name" name="fullName"
+                required aria-required="true"
+                aria-invalid="false"
                 placeholder="What should we call you?">
             
             <label for="email">Email</label>
             <input type="email" id="email" name="userEmail"
-                placeholder="exampleEmail@testsite.com">
+                required aria-required="true"
+                aria-invalid="false"
+                placeholder="example@testsite.com">
 
             <label for="pass">Enter Password</label>
-            <input type="password" id="pass" name="passWord"
-                placeholder="xxxxxxx">
-            
+            <input type="checkbox" id="toggle" hidden>
+            <input type="password" class="password-password" placeholder="xxxxxxx">
+            <input type="text" class="password-text" value="xxxxxxx">
+            <label for="toggle">Show Password</label><br>
+
             <label for="confirmPass">Confirm Password</label>
-            <input type="password" id="confirmPass" name="confirm"
+            <input type="password" id="confirmPassword" name="confirmPassword"
+                required aria-required="true"
+                aria-invalid="false"
                 placeholder="xxxxxxx">
 
             <input type="submit" id="Update" value="Update Profile">
@@ -30,9 +38,9 @@
             <div class="circle">65%</div>
             <h3>Profile Completeness</h3>
             <ul>
-                <li>Create Account</li>
-                <li>Update Roadmap Progress</li>
-                <li>Setup Public Profile</li>
+                <li class="complete">Create Account</li>
+                <li class="complete">Update Roadmap Progress</li>
+                <li class="complete">Setup Public Profile</li>
                 <li>Complete your first project</li>
                 <li>Invite your Friends</li>
             </ul>

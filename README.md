@@ -9,7 +9,11 @@ https://roadmap.sh/projects/accessible-form-ui
 The goal of this project is to not only help with practice on HTML and CSS but also to focus on creating an accessible form that is easy to use for all users, including those with disabilities.
 
 # Challenges
-
+The biggest challenge for me was figuring out the accessible functions for this project.
 
 # Screenshot
-### Form
+### Unsubmitted Form
+<img src="formUnfilled.png" alt="Screenshot of unsubmitted form" width="400px">
+
+### Submitted Form with Errors
+<img src="formFilled.png" alt="Screenshot of submitted form with error" width="400px">
